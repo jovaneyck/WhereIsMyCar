@@ -20,9 +20,9 @@ function WhereIsMyCarController() {
   },
   
   this.drawMap = function(){
-	  var mapsAPI = new GoogleMapsAPI();
 	  //Muggenberglei: (51.208332, 4.457209)
-	  var map = mapsAPI.showLocationOnMap('mapArea', 51.208332, 4.457209); 
+	  console.log('self:'+self);
+	  var map = new GoogleMapsAPI().showLocationOnMap('mapArea', 51.208332, 4.457209); 
   },
   
   this.drawPhoto = function(){
@@ -30,9 +30,12 @@ function WhereIsMyCarController() {
   },
   
   this.bindEvents = function(){
+
+	  var self = this;
+	  
 	  $('#recenterButton').live("click", function(event){
 		  event.preventDefault();
-		  new WhereIsMyCarController().drawMap(); //<this> does not work :(
+		  self.drawMap()
 	  });  
 	  
 	  $('#justParkedButton').live("click", function(event){
@@ -45,8 +48,6 @@ function WhereIsMyCarController() {
 		  event.preventDefault();
 		 // console.log(this.cameraAPI.imageURI)
 		  
-	  }); 
-	  
-	  
+	  }); 	  
   }
 }

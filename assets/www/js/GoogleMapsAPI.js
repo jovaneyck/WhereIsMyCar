@@ -23,8 +23,6 @@ function GoogleMapsAPI() {
 			  }
 	  );
 	  
-	  console.log('marker:'+marker);
-	  
 	  return map;
   }
 	
