@@ -1,0 +1,23 @@
+@CHARSET "ISO-8859-1";
+
+.titleArea {
+	font-size:200%;
+}
+
+#canvas {
+	height : 100%;
+	width : 100%;
+}
+
+#mapArea {
+	height:50%;
+	width:100%
+}
+
+#photoArea {
+	height:50%;
+}
+
+#footer {
+	font-size:50%;
+}

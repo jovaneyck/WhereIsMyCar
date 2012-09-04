@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>QUnit tests</title>
+		<link rel="stylesheet" href="lib/qunit/qunit.v.1.11.css">
+		<script src="lib/qunit/qunit.v.1.11.js"></script>
+		<script src="unittests.js"></script>
+		
+	</head>
+	<body>
+		<div id="qunit">the qunit fixture goes here</div>
+	</body>
+</html>

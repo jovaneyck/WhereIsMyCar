@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>Where Is My Car</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		
+		<!--includes-->	
+		
+		<!--Stylesheets-->
+		<link rel="stylesheet" type="text/css" href="../libs/jquery.mobile-1.1.1/jquery.mobile-1.1.1.min.css" />
+		<link rel="stylesheet" type="text/css" href="../style/style.css" />
+
+		<!--offline libs-->
+		<script type="text/javascript" src="../libs/jquery-1.8.0/jquery-1.8.0.min.js"></script>	
+		<script type="text/javascript" src="../libs/jquery.mobile-1.1.1/jquery.mobile-1.1.1.min.js"></script>		
+		<script type="text/javascript" src="../libs/cordova-2.0.0.js"></script>		
+		
+		<!--online libs-->
+		 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCEbIv0rDRvTOHAmQ1RdeEEvU7BsBXVGOE&sensor=false"></script>
+		
+		<!--custom code-->
+		<script type="text/javascript" src="../js/WhereIsMyCarController.js"></script>
+		<script type="text/javascript" src="../js/GoogleMapsAPI.js"></script>
+		
+		<script type="text/javascript">
+			//Javascript entrypoint
+			console.log("Waiting for phonegap to load properly...");
+			document.addEventListener("deviceready", onCordovaReady, false);
+			    
+			function onCordovaReady() {
+			    // Now safe to use the PhoneGap API
+			    var  controller = new WhereIsMyCarController();
+			    controller.initialize();
+			}
+			            
+		</script>
+	</head>
+	<body>
+		<div id="homePage" data-role="page">
+			<div data-role="header">
+				<div class="titleArea">Where's My Car?</div>
+			</div><!--header-->
+			
+			<div id="buttonArea">
+				<a href="#previouslyParkedPage" id="previouslyParkedButton" data-role="button" data-icon="arrow-r">Find my car</a>
+				<a href="#" id="parkButton" data-role="button" data-icon="arrow-r">I just parked</a>
+			</div><!--buttonArea-->
+			
+			<div id="footer" data-role="footer"> 
+				&copy; Copyright 2012 Smart Apps. All Rights Reserved. 
+			</div> <!--footer-->
+		</div><!--homePage-->
+		
+		<div id="previouslyParkedPage" data-role="page">
+			<div data-role="header">
+					<div class="titleArea">Previous parking location</div>
+			</div><!--header-->
+			<div id="canvas" data-role="content"> 
+				<div id="mapArea" data-role="content"></div>
+				<div id="photoArea" data-role="content"></div>
+			</div><!--canvas-->
+			<div id="buttonArea">
+				<a href="#" id="recenterButton" data-role="button" data-icon="arrow-r">Recenter map</a>
+			</div><!--buttonArea-->
+		</div><!--previouslyParkedPage-->
+	</body>
+</html>

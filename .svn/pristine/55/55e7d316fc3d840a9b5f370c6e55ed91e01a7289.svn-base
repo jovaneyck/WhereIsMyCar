@@ -1,0 +1,7 @@
+function WhereIsMyCarController() {
+  
+  this.initialize = function(){
+	  console.log("App initialized succesfully.");
+  }
+	
+}

@@ -1,0 +1,4 @@
+test( "QUnit sanity check", function() {
+	var aString = "a string"
+  ok( aString == aString, "QUnit is not working correctly!" );
+});

@@ -1,0 +1,19 @@
+function GoogleMapsAPI() {
+  
+/**
+ * Shows a google map focused on <latitude>,<longitude>. The map is displayed in the element #<elementName>.
+ */
+  this.showLocationOnMap = function(elementName, latitude, longitude){
+
+	  var mapOptions = {
+			  center: new google.maps.LatLng(latitude, longitude),
+			  zoom: 8,
+			  mapTypeId: google.maps.MapTypeId.ROADMAP
+	  };
+	  
+	  var map = new google.maps.Map(document.getElementById(elementName), mapOptions);
+	  
+	  return map;
+  }
+	
+}

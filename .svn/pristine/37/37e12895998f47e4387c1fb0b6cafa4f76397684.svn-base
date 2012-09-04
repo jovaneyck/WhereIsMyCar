@@ -1,0 +1,19 @@
+@CHARSET "ISO-8859-1";
+
+#titleArea {
+	font-size:200%;
+}
+
+#mapArea {
+	float:left; /*place the map left in the containing div*/
+	width:50%;
+}
+
+#photoArea {
+	float:right; /*place the map right in the containing div*/
+	width:50%;
+}
+
+#footer {
+	font-size:50%;
+}

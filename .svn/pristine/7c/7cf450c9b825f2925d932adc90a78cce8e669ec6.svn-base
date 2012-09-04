@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>QUnit tests</title>
+		<link rel="stylesheet" href="lib/qunit/qunit.v.1.11.css">
+		<script src="lib/qunit/qunit.v.1.11.js"></script>
+		<script src="../assets/www/libs/jquery-1.8.0/jquery-1.8.0.min.js"></script>
+		
+		<!--online libs-->
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCEbIv0rDRvTOHAmQ1RdeEEvU7BsBXVGOE&sensor=false"></script>
+		
+		<script src="unittests.js"></script>
+		
+		
+		
+		<!--source code under test-->
+		<script src="../assets/www/js/GoogleMapsAPI.js"></script>
+		
+	</head>
+	<body>
+		<div id="qunit">qunit</div>
+		<div id="qunit-fixture">qunit-fixture</div>
+	</body>
+</html>
