@@ -1,2 +1,7 @@
-*.svn
 bin/*
+*.class
+*.jar
+*.war
+*.ear
+*.svn
+
