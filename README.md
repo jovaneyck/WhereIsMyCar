@@ -9,7 +9,6 @@ Setup instructions for your IDE can be found here: [Getting started with Cordova
 The application is written in JavaScript, sources can be found under ./assets/www/js.
 Tests can be found under ./testing/.
 
-To launch the app, you must first configure a google maps API key in ./assets/www/html/index.html. Look for the line that says
-<script src="http://maps.googleapis.com/maps/api/js?key=%replace this with your google maps key%&sensor=true"></script>
-and replace %replace this with your google maps key% with a valid API key.
+To launch the app, you must first configure a google maps API key in ./assets/www/html/index.html. Look for the line that contains
+%replace this with your google maps key% and replace this with a valid API key.
 You can request a key [here](https://developers.google.com/maps/documentation/javascript/tutorial#api_key).
