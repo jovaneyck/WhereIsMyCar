@@ -1,7 +1,7 @@
 WhereIsMyCar
 ============
 
-Experiment with mobile app development: Cordova + javascript (Android project).
+Experiment with mobile app development: Cordova + javascript (Android project). You can read all about it on my [Blog](http://jvaneyck.wordpress.com/2012/12/02/experimenting-with-mobile-application-development/).
 
 This is an eclipse Android project.
 Setup instructions for your IDE can be found here: [Getting started with Cordova](http://docs.phonegap.com/en/2.3.0/guide_getting-started_android_index.md.html#Getting%20Started%20with%20Android).
