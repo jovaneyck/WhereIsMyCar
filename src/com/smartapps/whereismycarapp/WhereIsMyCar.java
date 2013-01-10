@@ -3,7 +3,7 @@ package com.smartapps.whereismycarapp;
 import android.os.Bundle;
 import org.apache.cordova.*;
 
-public class MainActivity extends DroidGap {
+public class WhereIsMyCar extends DroidGap {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
